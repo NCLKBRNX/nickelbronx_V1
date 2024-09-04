@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-BoldItalic.eot');
+    src: url('../../fonts/Kallisto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/Kallisto-BoldItalic.woff') format('woff'),
+        url('../../fonts/Kallisto-BoldItalic.ttf') format('truetype'),
+        url('../../fonts/Kallisto-BoldItalic.svg#Kallisto-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-Heavy.eot');
+    src: url('../../fonts/Kallisto-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-Heavy.woff2') format('woff2'),
+        url('../../fonts/Kallisto-Heavy.woff') format('woff'),
+        url('../../fonts/Kallisto-Heavy.ttf') format('truetype'),
+        url('../../fonts/Kallisto-Heavy.svg#Kallisto-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-Bold.eot');
+    src: url('../../fonts/Kallisto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-Bold.woff2') format('woff2'),
+        url('../../fonts/Kallisto-Bold.woff') format('woff'),
+        url('../../fonts/Kallisto-Bold.ttf') format('truetype'),
+        url('../../fonts/Kallisto-Bold.svg#Kallisto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-HeavyItalic.eot');
+    src: url('../../fonts/Kallisto-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-HeavyItalic.woff2') format('woff2'),
+        url('../../fonts/Kallisto-HeavyItalic.woff') format('woff'),
+        url('../../fonts/Kallisto-HeavyItalic.ttf') format('truetype'),
+        url('../../fonts/Kallisto-HeavyItalic.svg#Kallisto-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-Light.eot');
+    src: url('../../fonts/Kallisto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-Light.woff2') format('woff2'),
+        url('../../fonts/Kallisto-Light.woff') format('woff'),
+        url('../../fonts/Kallisto-Light.ttf') format('truetype'),
+        url('../../fonts/Kallisto-Light.svg#Kallisto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-LightItalic.eot');
+    src: url('../../fonts/Kallisto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-LightItalic.woff2') format('woff2'),
+        url('../../fonts/Kallisto-LightItalic.woff') format('woff'),
+        url('../../fonts/Kallisto-LightItalic.ttf') format('truetype'),
+        url('../../fonts/Kallisto-LightItalic.svg#Kallisto-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-Medium.eot');
+    src: url('../../fonts/Kallisto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-Medium.woff2') format('woff2'),
+        url('../../fonts/Kallisto-Medium.woff') format('woff'),
+        url('../../fonts/Kallisto-Medium.ttf') format('truetype'),
+        url('../../fonts/Kallisto-Medium.svg#Kallisto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-ThinItalic.eot');
+    src: url('../../fonts/Kallisto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-ThinItalic.woff2') format('woff2'),
+        url('../../fonts/Kallisto-ThinItalic.woff') format('woff'),
+        url('../../fonts/Kallisto-ThinItalic.ttf') format('truetype'),
+        url('../../fonts/Kallisto-ThinItalic.svg#Kallisto-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-MediumItalic.eot');
+    src: url('../../fonts/Kallisto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/Kallisto-MediumItalic.woff') format('woff'),
+        url('../../fonts/Kallisto-MediumItalic.ttf') format('truetype'),
+        url('../../fonts/Kallisto-MediumItalic.svg#Kallisto-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kallisto';
+    src: url('../../fonts/Kallisto-Thin.eot');
+    src: url('../../fonts/Kallisto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Kallisto-Thin.woff2') format('woff2'),
+        url('../../fonts/Kallisto-Thin.woff') format('woff'),
+        url('../../fonts/Kallisto-Thin.ttf') format('truetype'),
+        url('../../fonts/Kallisto-Thin.svg#Kallisto-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCSignLanguageW00';
+    src: url('../../fonts/CCSignLanguageW00-Regular.woff2') format('woff2'),
+        url('../../fonts/CCSignLanguageW00-Regular.woff') format('woff'),
+        url('../../fonts/CCSignLanguageW00-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCSignLanguageW00';
+    src: url('../../fonts/CCSignLanguageW00-Regular_1.woff2') format('woff2'),
+        url('../../fonts/CCSignLanguageW00-Regular_1.woff') format('woff'),
+        url('../../fonts/CCSignLanguageW00-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCSignLanguageW00';
+    src: url('../../fonts/CCSignLanguageW00-Regular_2.woff2') format('woff2'),
+        url('../../fonts/CCSignLanguageW00-Regular_2.woff') format('woff'),
+        url('../../fonts/CCSignLanguageW00-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../../fonts/LexendDeca-Regular.woff2') format('woff2'),
+    url('../../fonts/LexendDeca-Regular.woff') format('woff'),
+    url('../../fonts/LexendDeca-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer components {
+    .btn-circle {
+
+        @apply relative ml-[57px] mr-[43px] z-[2] text-white text-[16px] uppercase hover:text-secondary;
+    }
+    .btn-circle::before {
+        content: '';
+        background-image: url(../../public/header-cta.svg);
+        background-size: 100%;
+        @apply absolute w-[187px] h-[50px] left-[-45px] top-[-15px] right-0 z-[-1] bg-100% bg-no-repeat;
+    }
+}
+
+.banner_inner_section h1 {
+    max-width: 950px;
+    margin: 0 auto 25px;
+    font-family: Kallisto;
+    color: #f7f9fc;
+}
+.hero_description  {
+    max-width: 662px;
+    margin: 0 auto 40px;
+    color: #ababab;
+    font-family: Lexend Deca, sans-serif;
+}
+.banner_inner_section h1 span {
+    background: linear-gradient(90deg, #ff2093 34.92%, #00c2ff 98.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+.cta_btutton.banner-btn {
+    color: #fff;
+}
+.we-are-inner .title-part {
+    width: 50%;
+    padding-right: 84px;
+}
+.we-are-inner .discription-part {
+    width: 50%;
+} 
+.video-section {
+    width: 100%;
+    position: relative;
+    margin-top: -240px;
+}
+a.home-btn:hover {
+    background: linear-gradient(90deg,#00c2ff,#ff2093 99.88%);
+}
+/*a.home-btn.banner-btn:hover {
+    box-shadow: 2px 2px #929292;
+}*/
+a.home-btn.banner-btn {
+    box-shadow: 6px 6px #929292;
+}
+a.home-btn {
+    color: #1f1f1f;
+}
+a.home-btn {
+    background-color: #00c2ff;
+    min-width: 240px;
+    color: #000;
+    font-family: Kallisto;
+    text-decoration: none;
+    box-shadow: 6px 6px #1f1f1f;
+    display: table;
+    transition: all .3s linear;
+}
+.we-are-inner .title-part h2 {
+    color: #1f1f1f;
+    font-family: Lexend Deca,sans-serif;
+}
+.we-are-inner .title-part h3 {
+    color: #1f1f1f;
+    font-family: Kallisto;
+    }
+.we-are-inner .title-part h3 span:before {
+    background: linear-gradient(90deg,#e72f9d,#6d7dd1 60%,#02c1fe);
+}
+.we-are-inner .title-part h3>span {
+    position: relative;
+    z-index: 2;
+}
+.we-are-inner .title-part h3 span:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 25px;
+    z-index: -1;
+    bottom: 0;
+}
+.we-are-inner .discription-part p,.we-are-inner .discription-part  {
+    color: #1f1f1f;
+    font-family: Lexend Deca, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+ .we-are-inner {
+    display: block;
+}
+}

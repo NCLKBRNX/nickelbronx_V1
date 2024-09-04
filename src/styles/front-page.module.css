@@ -1,0 +1,53 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+}
+
+.card:hover {
+  border-color: royalblue;
+  color: royalblue;
+}
+
+.card h3 {
+  font-size: 1.75rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.banner_inner_section h1 {
+    max-width: 950px;
+    margin: 0 auto 25px;
+    font-family: Kallisto;
+    color: #f7f9fc;
+}
+.hero_description  {
+    max-width: 662px;
+    margin: 0 auto 40px;
+    color: #ababab;
+    font-family: Lexend Deca, sans-serif;
+}
+.banner_inner_section h1>span{
+    background: linear-gradient(90deg, #ff2093 34.92%, #00c2ff 98.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
