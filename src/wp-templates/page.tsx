@@ -15,6 +15,9 @@ const Component: FaustTemplate<GetPageQuery> = (props) => {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
+    const brandLogo = '';
+  const ctaText = '';
+  const ctaLink = '';
   const { title, content } = props.data.page;
 
   return (
@@ -27,6 +30,9 @@ const Component: FaustTemplate<GetPageQuery> = (props) => {
         siteTitle={siteTitle}
         siteDescription={siteDescription}
         menuItems={menuItems}
+          BrandLogo={brandLogo}
+        CTAText={ctaText}
+        CTALink={ctaLink}
       />
 
       <main className="container">

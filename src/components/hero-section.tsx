@@ -18,24 +18,27 @@ function stripHtmlTags(html: string) {
 }
 export default function HeroSection( { heroTitle, heroDescription, heroCta } : HeroSectionProps ) {
     return (
-      <section className="bg-primary banner-section pt-[80px] pb-[320px] ">
-      <div class="banner_inner_section">
-                  <h1 class="font-bold text-[70px] text-center leading-tight" dangerouslySetInnerHTML={{ __html: heroTitle }} />
+      <section className="bg-primary banner-section">
+      <div className="banner_inner_section">
+<div className="container">
+                  <h1 dangerouslySetInnerHTML={{ __html: heroTitle }} />
 
-        <div class="hero_description font-normal text-[22px] text-center leading-[34px]">
+        <div className="hero_description">
          <p> {heroDescription}</p>
         </div>
-        <div class="cta_btutton banner-button text-center flex justify-center">
+        <div className="cta_btutton banner-button">
           {heroCta && heroCta.ctaText && heroCta.ctaLink && (
             <a 
               href={heroCta.ctaLink.url} 
               target={heroCta.ctaLink.target} 
               title={heroCta.ctaLink.title} 
-              className="home-btn banner-btn uppercase text-center pt-[10px] pb-[10px] pl-[25px] pr-[25px] text-[20px] font-extrabold leading-tight" 
+              className="home-btn banner-btn" 
             >
               {heroCta.ctaText}
             </a>
           )}        </div>
+
+          </div>
         </div>
       </section>
     );

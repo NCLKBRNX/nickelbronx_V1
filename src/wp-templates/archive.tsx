@@ -11,6 +11,10 @@ const Component: FaustTemplate<GetArchiveQuery> = (props) => {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
+  const brandLogo = '';
+  const ctaText = '';
+  const ctaLink = '';
+
   const { archiveType } = props.data.nodeByUri;
 
   if (archiveType !== "Category" && archiveType !== "Tag") {
@@ -30,6 +34,9 @@ const Component: FaustTemplate<GetArchiveQuery> = (props) => {
         siteTitle={siteTitle}
         siteDescription={siteDescription}
         menuItems={menuItems}
+         BrandLogo={brandLogo}
+        CTAText={ctaText}
+        CTALink={ctaLink}
       />
 
       <main className="container">

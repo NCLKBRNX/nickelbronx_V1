@@ -11,16 +11,18 @@ type HeroVideoProps = {
 }
 
 
+
+
 export default function HeroVideoSection( { heroVideoUri } : HeroVideoProps ) {
     return (
+
       <section className="video-section">
-      <div class="video_inner_section pl-[60px] pr-[60px]">
-         <video controls width="100%">
-          <source src="https://nickelbronx1.wpenginepowered.com/video/homevideo.mp4" type="video/mp4" />
-          <source src="https://example.com/video/homevideo.webm" type="video/webm" />
+      <div className="video_inner_section">
+<video autoPlay loop muted playsInline width="100%">
+     <source src={heroVideoUri} type="video/mp4" />
+     <source src="movie.ogg" type="video/ogg" />
         </video>
 
-        
 </div>
       </section>
     );

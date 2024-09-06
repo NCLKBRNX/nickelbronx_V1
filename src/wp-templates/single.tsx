@@ -15,6 +15,9 @@ const Component: FaustTemplate<GetPostQuery> = (props) => {
   const { post, generalSettings, primaryMenuItems } = props.data;
   const { title: siteTitle, description: siteDescription } = generalSettings;
   const { nodes: menuItems } = primaryMenuItems;
+  const brandLogo = '';
+  const ctaText = '';
+  const ctaLink = '';
   const { title, content, date, author } = post;
 
   return (
@@ -27,6 +30,9 @@ const Component: FaustTemplate<GetPostQuery> = (props) => {
         siteTitle={siteTitle}
         siteDescription={siteDescription}
         menuItems={menuItems}
+         BrandLogo={brandLogo}
+        CTAText={ctaText}
+        CTALink={ctaLink}
       />
 
       <main className="container">

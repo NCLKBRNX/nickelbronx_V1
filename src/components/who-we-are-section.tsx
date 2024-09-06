@@ -17,25 +17,25 @@ type WhoWeAreSectionProps = {
 
 export default function WhoWeAreSection( { subtitleWwa, titleWwa, descriptionWwa, ctaWwa } : WhoWeAreSectionProps ) {
     return (
-      <section className="who_we_are_section pt-[86px] pb-[120px]">
-      <div class="whoweare_inner_section">
+      <section className="who_we_are_section">
+      <div className="whoweare_inner_section">
 
-<div class="inner-container p-8">
-             <div class="we-are-inner flex items-center">
-             <div class="title-part">
-          <h2 class="leading-[24px] text-[16px] font-light mb-[6px] tracking-[6.4px]">{subtitleWwa}</h2>
-          <h3 class="tracking-[4px] leading-[43px] font-bold text-[35px]" dangerouslySetInnerHTML={{ __html: titleWwa }} />
+<div className="inner-container">
+             <div className="we-are-inner">
+             <div className="title-part">
+          <h2>{subtitleWwa}</h2>
+          <h3 dangerouslySetInnerHTML={{ __html: titleWwa }} />
 
              </div>
-             <div class="discription-part">
-           <div class="description leading-[31px] font-normal text-[20px] mb-[40px]">{descriptionWwa}</div>
-       <div class="cta_btutton whoweare-btn text-center">
+             <div className="discription-part">
+           <div className="description">{descriptionWwa}</div>
+          <div className="whoweare-btn text-center">
           {ctaWwa && ctaWwa.ctaWwaTitle && ctaWwa.ctaWwaLink && (
             <a 
               href={ctaWwa.ctaWwaLink.url} 
               target={ctaWwa.ctaWwaLink.target} 
               title={ctaWwa.ctaWwaLink.title} 
-              className="home-btn uppercase text-center pt-[10px] pb-[10px] pl-[25px] pr-[25px] text-[20px] font-extrabold leading-tight" 
+              className="home-btn" 
             >
               {ctaWwa.ctaWwaTitle}
             </a>

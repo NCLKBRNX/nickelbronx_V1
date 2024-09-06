@@ -194,91 +194,186 @@
     }
 }
 
+.banner-section
+{
+   @apply pt-[80px] pb-[320px]; 
+}
 .banner_inner_section h1 {
-    max-width: 950px;
-    margin: 0 auto 25px;
-    font-family: Kallisto;
-    color: #f7f9fc;
+    max-width: 950px;color: #f7f9fc;
+    @apply font-bold text-[70px] text-center mt-[0] ml-[auto] mr-[auto]  mb-[20px] leading-tight font-kallisto;
 }
 .hero_description  {
-    max-width: 662px;
-    margin: 0 auto 40px;
-    color: #ababab;
-    font-family: Lexend Deca, sans-serif;
+    max-width: 662px;color: #ababab;
+  @apply font-normal font-lexend-deca text-[22px] text-center leading-[34px] mt-[0] ml-[auto] mr-[auto] mb-[40px];
+
 }
 .banner_inner_section h1 span {
-    background: linear-gradient(90deg, #ff2093 34.92%, #00c2ff 98.6%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: italic;
+    background: linear-gradient(90deg, #ff2093 34.92%, #00c2ff 98.6%);background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;font-style: italic;
+}
+.who_we_are_section
+{
+    @apply pt-[86px] pb-[120px];
+}
+.who_we_are_section .inner-container
+{
+    @apply px-8;
 }
 .cta_btutton.banner-btn {
     color: #fff;
 }
 .we-are-inner .title-part {
-    width: 50%;
-    padding-right: 84px;
+    @apply pr-[84px] w-[50%];
 }
 .we-are-inner .discription-part {
-    width: 50%;
+        @apply w-[50%];
+
 } 
 .video-section {
-    width: 100%;
+    @apply w-[100%]  mt-[-240px];
     position: relative;
-    margin-top: -240px;
 }
 a.home-btn:hover {
     background: linear-gradient(90deg,#00c2ff,#ff2093 99.88%);
 }
-/*a.home-btn.banner-btn:hover {
-    box-shadow: 2px 2px #929292;
-}*/
+
 a.home-btn.banner-btn {
     box-shadow: 6px 6px #929292;
 }
 a.home-btn {
     color: #1f1f1f;
 }
+.cta_btutton{
+   @apply text-center flex justify-center ;
+}
+
 a.home-btn {
-    background-color: #00c2ff;
-    min-width: 240px;
-    color: #000;
-    font-family: Kallisto;
-    text-decoration: none;
-    box-shadow: 6px 6px #1f1f1f;
-    display: table;
-    transition: all .3s linear;
+    background-color: #00c2ff;min-width: 240px;color: #000;text-decoration: none;box-shadow: 6px 6px #1f1f1f;display: table;transition: all .3s linear;
+    @apply uppercase tracking-[2px] text-center font-kallisto pt-[10px] pb-[10px] pl-[25px] pr-[25px] text-[20px] font-extrabold leading-tight;
 }
 .we-are-inner .title-part h2 {
-    color: #1f1f1f;
-    font-family: Lexend Deca,sans-serif;
-}
+    color: #1f1f1f; 
+    @apply leading-[24px] font-lexend-deca text-[16px] font-medium mb-[6px] tracking-[6.4px];
+   }
 .we-are-inner .title-part h3 {
     color: #1f1f1f;
-    font-family: Kallisto;
+    @apply tracking-[4px] leading-[43px] font-bold text-[35px] font-kallisto;
     }
 .we-are-inner .title-part h3 span:before {
     background: linear-gradient(90deg,#e72f9d,#6d7dd1 60%,#02c1fe);
 }
 .we-are-inner .title-part h3>span {
-    position: relative;
-    z-index: 2;
+    position: relative; @apply z-[2];
+
 }
 .we-are-inner .title-part h3 span:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 25px;
-    z-index: -1;
-    bottom: 0;
+ position: absolute;content: "";height: 25px;
+ @apply z-[-1] bottom-[0] w-[100%];
+
 }
-.we-are-inner .discription-part p,.we-are-inner .discription-part  {
+.we-are-inner .discription-part .description p,.we-are-inner .discription-part .description  {
     color: #1f1f1f;
-    font-family: Lexend Deca, sans-serif;
+ @apply leading-[31px] font-lexend-deca font-normal text-[20px] mb-[40px];
+}
+.video_inner_section
+{
+    @apply px-[60px];
+}
+ .we-are-inner {
+
+@apply flex items-center
 }
 @media only screen and (max-width: 768px) {
- .we-are-inner {
-    display: block;
+    .hero_description {
+    color: #fff;
 }
+.video-section {
+ @apply mt-[-100px]; }
+    .banner-section h1 {
+ @apply text-[40px] mt-[0] ml-[auto] mr-[auto] mb-[15px];
+    }
+section.bg-primary.banner-section {
+     @apply pb-[172px] pt-[60px];
+}
+ .we-are-inner { display: block;}
+.we-are-inner .title-part {
+ @apply w-[100%] pr-[0px] mb-[30px];
+}
+.we-are-inner .discription-part {
+     @apply w-[100%];
+} 
+}
+@media screen and (max-width: 1024px) {
+    .banner-section h1 {
+     @apply text-[50px] mt-[0] ml-[auto] mr-[auto] mb-[15px];
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .about-container, .container, .container2 {
+         @apply pt-[0px] pb-[0px] pl-[20px] pr-[20px];
+            max-width: 1512px;
+    }
+}
+.hamburger-icon {@apply text-[24px];color: #ff2093;}
+header.sticky {box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+.header {background: #1f1f1f;}
+
+input#menu-toggle { display: none;}
+nav#mobile-menu { display: none; }
+input#menu-toggle:checked ~ nav#mobile-menu { display: block; }
+
+@media (min-width: 768px) {
+  nav#mobile-menu {
+   @apply flex;
+  }
+
+  .hamburger-icon { display: none;}
+}
+
+
+@media (max-width: 990px) {
+  nav#mobile-menu ul {
+    flex-direction: column;
+    @apply gap-[20px];
+  }
+ nav#mobile-menu li {
+    @apply mt-[10px] mb-[10px] ml-[0px] mr-[0px];
+ }
+.hamburger-icon {display: block;}
+}
+
+.hamburger-icon { @apply text-[30px];}
+.nav-mobile {display: none;}
+
+@media (max-width: 991px) {
+  .nav-mobile {
+  display: block;width: 100%;
+  @apply p-[20px];}
+  nav ul {flex-direction: column;@apply gap-[20px];}
+  nav li { @apply mt-[10px] mb-[10px] my-[0px];}
+}
+
+nav.mobile-menu-nav {background-color: #fff;@apply z-[9];top: 83px;}
+nav.mobile-menu-nav ul li a {color: #000;}
+nav.mobile-menu-nav ul {align-items: initial;@apply px-[20px]  gap-[0px];}
+
+@media (max-width: 991px) {
+nav.desktop-menu-nav {display: none !important;}
+.mobile-ham-btn { display: block !important;}
+.btn-circle { @apply ml-[45px];}
+}
+
+@media (max-width:991px) and (min-width: 768px){
+.we-are-inner .title-part { @apply pr-[20px]; }
+.we-are-inner { display: flex;align-items: flex-start;}
+.we-are-inner .title-part h3 { @apply text-[28px] leading-[35px]; }
+.we-are-inner .discription-part .description { @apply text-[18px] ; }
+}
+
+footer.footer_footer__GoTLO { background: #1f1f1f;color: #fff !important;}
+footer.footer_footer__GoTLO a { color:#fff;cursor: pointer; }
+
+@media (min-width: 1500px) {
+
+.container { max-width: 100%;}
 }

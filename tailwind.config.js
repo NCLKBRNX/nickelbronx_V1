@@ -9,6 +9,8 @@ module.exports = {
       },
       fontFamily: {
         'kallisto': 'Kallisto',
+        'lexend-deca': ['Lexend Deca']
+
       },
       backgroundSize: {
         '100%': '100%',
