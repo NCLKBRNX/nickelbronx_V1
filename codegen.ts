@@ -1,7 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "http://localhost/wordpressprojects/nickletypescript/graphql",
+  schema: "http://nickelbronxstg.wpenginepowered.com/graphql",
   documents: ["src/**/*.{tsx,ts}"],
   generates: {
     "./src/__generated__/": {
