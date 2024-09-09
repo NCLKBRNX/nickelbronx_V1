@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
-    "build": "faust build",
+    "build": "faust build --watch",
     "generate": "faust generatePossibleTypes",
     "start": "faust start",
     "codegen": "graphql-codegen",
