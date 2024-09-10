@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       Powered by{" "}
       <a href="https://nickelbronx.com/" target="_blank" rel="noopener noreferrer">
-        Nicklebronx
+        Nicklebronx.
       </a>
     </footer>
   );
