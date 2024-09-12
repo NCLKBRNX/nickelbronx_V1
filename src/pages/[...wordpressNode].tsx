@@ -1,18 +1,18 @@
 import { getWordPressProps, WordPressTemplate } from "@faustwp/core";
-import { GetStaticPaths, GetServerSideProps  } from "next";
+import { GetServerSideProps } from "next";
 import { WordPressTemplateProps } from "../types";
 
+// Page component
 export default function Page(props: WordPressTemplateProps) {
   return <WordPressTemplate {...props} />;
 }
 
-export const getServerSideProps: GetServerSideProps  = (ctx) => {
-  return getWordPressProps({ ctx });
-};
+// Fetch data on each request
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  // Fetch WordPress data dynamically on each request
+  const props = await getWordPressProps({ ctx });
 
-export const getStaticPaths: GetStaticPaths = () => {
   return {
-    paths: [],
-    fallback: "blocking",
+    props,
   };
 };
