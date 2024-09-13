@@ -6,8 +6,13 @@ export default function Page(props: WordPressTemplateProps) {
   return <WordPressTemplate {...props} />;
 }
 
-export const getStaticProps: GetStaticProps = (ctx) => {
-  return getWordPressProps({ ctx });
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const wordpressProps = await getWordPressProps({ ctx });
+
+  return {
+    ...wordpressProps,
+    revalidate: 10,  // Revalidate after 60 seconds (set the desired interval)
+  };
 };
 
 export const getStaticPaths: GetStaticPaths = () => {
