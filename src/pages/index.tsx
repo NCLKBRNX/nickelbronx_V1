@@ -11,6 +11,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     ...wordpressProps,
-    revalidate: 10,  // Revalidate after 60 seconds (set the desired interval)
+    revalidate: 5,  // Revalidate after 60 seconds (set the desired interval)
   };
 };
